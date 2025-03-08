@@ -1,16 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "Simple Chrome Extension",
+  "name": "AI Progress YouTube Explorer",
   "version": "1.0",
-  "description": "A simple Chrome extension",
+  "description": "Explore recent and popular videos about AI progress on YouTube",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icon16.png",
       "48": "icon48.png"
+
     }
   },
-  "permissions": [],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.googleapis.com/youtube/v3/*"
+  ],
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png"

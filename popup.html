@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Simple Chrome Extension</title>
+  <title>AI Progress YouTube Explorer</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Chrome Extension!</h1>
-    <button id="clickMe">Click Me!</button>
-    <p id="message"></p>
+    <h1>AI Progress Videos</h1>
+    
+    <div class="tabs">
+      <button id="recentTab" class="tab-button active">Recent Videos</button>
+      <button id="popularTab" class="tab-button">All-Time Popular</button>
+    </div>
+
+    <div id="loading" class="loading">Loading videos...</div>
+    
+    <div id="videoResults" class="video-results">
+      <!-- Videos will be inserted here -->
+    </div>
+
+    <div class="api-key-section" id="apiKeySection">
+      <p>Please enter your YouTube API Key:</p>
+      <input type="text" id="apiKey" placeholder="Enter YouTube API Key">
+      <button id="saveApiKey">Save API Key</button>
+    </div>
   </div>
   <script src="popup.js"></script>
 </body>

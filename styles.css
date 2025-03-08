@@ -1,5 +1,5 @@
 .container {
-  width: 300px;
+  width: 400px;
   padding: 20px;
   text-align: center;
 }
@@ -8,6 +8,108 @@ h1 {
   color: #333;
   font-size: 24px;
   margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.loading {
+  padding: 20px;
+  color: #666;
+  display: none;
+}
+
+.video-results {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.video-card {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s;
+}
+
+.video-card:hover {
+  background-color: #f9f9f9;
+}
+
+.video-thumbnail {
+  width: 120px;
+  height: 67px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.video-info {
+  flex: 1;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.video-channel {
+  font-size: 12px;
+  color: #666;
+}
+
+.video-stats {
+  font-size: 12px;
+  color: #999;
+}
+
+.api-key-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+#apiKey {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#saveApiKey {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#saveApiKey:hover {
+  background-color: #45a049;
 }
 
 button {
